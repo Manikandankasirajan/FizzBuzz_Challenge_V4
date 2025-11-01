@@ -26,4 +26,8 @@ describe("test cases for FizzBuzz challenge", () => {
 		const num4 = 30;
 		expect(fizzBuzz(num4)).toBe("FizzBuzz");
 	});
+	test("throw error for invalid input", () => {
+		const num = "ee";
+		expect(() => fizzBuzz(num)).toThrow();
+	});
 });

@@ -4,6 +4,10 @@ import isNotMultipleOf3And5 from "./utils/isNotMultipleOf3And5";
 import isMultipleOf3And5 from "./utils/isMultipleOf3And5";
 
 export default function fizzBuzz(num) {
+	if (typeof num !== "number") {
+		throw new TypeError("Invalid Input");
+	}
+
 	const rules = [
 		isNotMultipleOf3And5,
 		isMultipleOf3,
