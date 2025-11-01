@@ -12,4 +12,8 @@ describe("test cases for FizzBuzz challenge", () => {
 		const num = 5;
 		expect(fizzBuzz(num)).toBe("Buzz");
 	});
+	test("returns FizzBuzz for the multiples of 3 and 5", () => {
+		const num = 15;
+		expect(fizzBuzz(num)).toBe("FizzBuzz");
+	});
 });
