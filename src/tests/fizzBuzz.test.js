@@ -38,4 +38,8 @@ describe("test cases for FizzBuzz challenge", () => {
 		const num = 0;
 		expect(fizzBuzz(num)).toBe("FizzBuzz");
 	});
+	test("validation for negative numbers", () => {
+		const num = -3;
+		expect(fizzBuzz(num)).toBe("Fizz");
+	});
 });
