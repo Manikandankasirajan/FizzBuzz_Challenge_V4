@@ -34,4 +34,8 @@ describe("test cases for FizzBuzz challenge", () => {
 		const num = 15.4;
 		expect(fizzBuzz(num)).toBe("FizzBuzz");
 	});
+	test("return FizzBuzz for 0", () => {
+		const num = 0;
+		expect(fizzBuzz(num)).toBe("FizzBuzz");
+	});
 });
