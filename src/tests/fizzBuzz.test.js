@@ -16,4 +16,14 @@ describe("test cases for FizzBuzz challenge", () => {
 		const num = 15;
 		expect(fizzBuzz(num)).toBe("FizzBuzz");
 	});
+	test("random numbers to check program certainty", () => {
+		const num = 7;
+		expect(fizzBuzz(num)).toBe(num);
+		const num2 = 9;
+		expect(fizzBuzz(num2)).toBe("Fizz");
+		const num3 = 20;
+		expect(fizzBuzz(num3)).toBe("Buzz");
+		const num4 = 30;
+		expect(fizzBuzz(num4)).toBe("FizzBuzz");
+	});
 });
