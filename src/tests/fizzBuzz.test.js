@@ -8,4 +8,8 @@ describe("test cases for FizzBuzz challenge", () => {
 		const num = 3;
 		expect(fizzBuzz(num)).toBe("Fizz");
 	});
+	test("returns Buzz for the multiples of 5", () => {
+		const num = 5;
+		expect(fizzBuzz(num)).toBe("Buzz");
+	});
 });
