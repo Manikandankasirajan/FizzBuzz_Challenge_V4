@@ -30,4 +30,8 @@ describe("test cases for FizzBuzz challenge", () => {
 		const num = "ee";
 		expect(() => fizzBuzz(num)).toThrow();
 	});
+	test("to handle decimal numbers", () => {
+		const num = 15.4;
+		expect(fizzBuzz(num)).toBe("FizzBuzz");
+	});
 });

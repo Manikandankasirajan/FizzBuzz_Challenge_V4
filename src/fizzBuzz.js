@@ -15,7 +15,7 @@ export default function fizzBuzz(num) {
 		isMultipleOf3And5,
 	];
 	for (const rule of rules) {
-		const result = rule(num);
+		const result = rule(Math.floor(num));
 		if (result) {
 			return result;
 		}
